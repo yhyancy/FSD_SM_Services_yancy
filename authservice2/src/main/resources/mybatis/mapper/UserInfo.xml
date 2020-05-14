@@ -15,4 +15,10 @@ insert into user_info(user_name,password, email, mobile_num, user_type,veri_code
 </insert>
 
 
+
+<update id="updateValidate">
+update user_info set confirmed ='Y' where user_name= #{uName}
+</update>
+
+
 </mapper>
