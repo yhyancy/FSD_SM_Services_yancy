@@ -8,7 +8,11 @@
 <select id="selectUserByName" resultType="com.yh.data.entity.UserInfoDB"> 
 	    select user_name, password, user_type, veri_code from user_info where user_name = #{userName}
 </select>
-	
+<insert id="addUser" parameterType="com.yh.data.entity.UserInfoDB">
+insert into user_info(user_name,password, email, mobile_num, user_type,veri_code,confirmed) values(
+#{user_name},#{password}, #{email}, #{mobile_num}, #{user_type},#{veri_code},#{confirmed}
+)
+</insert>
 
 
 </mapper>

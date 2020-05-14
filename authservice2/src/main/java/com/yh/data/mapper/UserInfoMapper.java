@@ -8,5 +8,6 @@ import com.yh.data.entity.UserInfoDB;
 @Repository
 public interface UserInfoMapper {	
 	   UserInfoDB selectUserByName(String uName);
+	   UserInfoDB addUser( UserInfoDB userInfoDB);
 	 
 }

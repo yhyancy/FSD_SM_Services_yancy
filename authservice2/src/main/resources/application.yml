@@ -1,6 +1,7 @@
 server:
   port: 9001
-  
+
+#数据库连接  
 spring:
   application:
     name: authservice
@@ -9,7 +10,17 @@ spring:
     username: mysql
     password: 594Caoyizheng!
     driver-class-name: com.mysql.cj.jdbc.Driver
+#邮件
+  mail:
+    host: qq.com
+    username: 2397856503@qq.com
+    password: 1997yuanyuan2018
+    default-encoding: UTF-8
 
+   
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   type-aliases-package: package com.yh.data
+
+
+

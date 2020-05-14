@@ -1,5 +1,7 @@
 package com.yh.data.entity;
 
+
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -22,5 +24,5 @@ public class UserInfoDB {
 	private String user_type;
 	private String veri_code;	
 	private String confirmed;
-
+	
 }
