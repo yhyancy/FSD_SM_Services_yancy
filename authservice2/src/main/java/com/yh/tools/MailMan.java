@@ -19,11 +19,12 @@ public class MailMan {
 	
 	public void sender(String sendToAddress, String subject, String text) {
 		SimpleMailMessage message = new SimpleMailMessage();
+	
 		message.setFrom(sendFromEmailAddress);
 		message.setTo(sendToAddress);
 		message.setSubject(subject);
 		message.setText(text);
-		
+				
 		mailSender.send(message);
 		
 	}
